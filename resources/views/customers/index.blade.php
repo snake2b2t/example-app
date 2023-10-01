@@ -69,22 +69,13 @@
 
                 <form action="{{ route('customers.destroy',$customer->id) }}" method="POST">
 
-   
-
                     <a class="btn btn-info" href="{{ route('customers.show',$customer->id) }}">Show</a>
-
-    
-
+                    
                     <a class="btn btn-primary" href="{{ route('customers.edit',$customer->id) }}">Edit</a>
 
-   
-
-                    @csrf
+                    @csrf 
 
                     @method('DELETE')
-
-      
-
                     <button type="submit" class="btn btn-danger">Delete</button>
 
                 </form>
